@@ -4,6 +4,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   text-align: center;
   padding-block: 1rem;
+  background-color: rgb(240, 240, 240);
 }
 
 h1, h2, h3, h4 {
@@ -13,4 +14,28 @@ h1, h2, h3, h4 {
 .container {
   width: 85vw;
   margin: auto;
+}
+
+.section {
+  padding: 1rem;
+  background-color: white;
+  margin-bottom: 1rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.section p {
+  text-align: left;
+}
+
+.bob-section img {
+  width: 5.5rem;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
+  height: 6rem;
+  object-fit: cover;
+  object-position: top;
 }
