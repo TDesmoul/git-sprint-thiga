@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap');
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  padding-block: 1rem;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Parkinsans", sans-serif;
+}
+
+.container {
+  width: 85vw;
+  margin: auto;
+}
