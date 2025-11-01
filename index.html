@@ -19,5 +19,38 @@
         </p>
       </div>
     </div>
+    <div class="container">
+      <h1>API lecture</h1>
+      <div class="section">
+        <button id="chuck-norris-btn">Chuck Norris</button>
+        <div id="chuck-norris-target">...</div>
+      </div>
+      <div class="section">
+        <button id="advice-btn">Advice</button>
+        <div id="advice-target">...</div>
+      </div>
+    </div>
   </body>
+  <script>
+    const chuckBtn = document.getElementById("chuck-norris-btn");
+    const chuckTarget = document.getElementById("chuck-norris-target");
+    chuckBtn.addEventListener("click", (event) => {
+      fetch("https://api.chucknorris.io/jokes/random")
+      .then(response => response.json())
+      .then(data => {
+        chuckTarget.innerText = data.value;
+      })
+    })
+
+    const adviceBtn = document.getElementById("advice-btn");
+    const adviceTarget = document.getElementById("advice-target");
+    adviceBtn.addEventListener("click", (event) => {
+      fetch("https://api.adviceslip.com/advice")
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        adviceTarget.innerText = data.slip.advice;
+      })
+    })
+  </script>
 </html>
